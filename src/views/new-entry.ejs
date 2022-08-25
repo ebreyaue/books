@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<%- include('./partials/header') %>
+<title>Breyaue's Book Register | New Book</title>
+</head>
+
+<body>
+    <%- include ('./partials/navigation') %>
+
+    <div class="container p-4">
+        <form action="/new-entry" class="card card-body" method="post">
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" class="form-control" id="title" placeholder="Entry an new title"
+                    autofocus required>
+            </div>
+
+            <div class="form-group">
+                <label for="Author">Author</label>
+                <input type="text" name="author" class="form-control" id="author" placeholder="Author" >
+            </div>
+
+            <div class="form-group">
+                <label for="Image">Imagen</label>
+                <input type="text" name="image" class="form-control" id="image" placeholder="Image" >
+            </div>
+
+            <div class="form-group">
+            <label for="Description">Description</label>
+            <textarea name="description"  id="description" rows="2" class="form-control" required></textarea>
+            </div>
+            
+            <div class="form-group">
+            <input type="submit" value="Save Book" class="btn btn-primary">
+            </div>
+</form>
+</div>
+
+</body>
+
+</html>
